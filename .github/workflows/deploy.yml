@@ -30,8 +30,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./build   # Vite output folder (set in your vite.config.js)
-  
+          path: ./build   # 👈 matches "outDir" in vite.config.js
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
